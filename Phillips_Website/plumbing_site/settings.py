@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     'f1f0-2a02-c7c-a6bc-b00-489d-9f12-925b-4786.ngrok-free.app',
     '09a1-31-94-2-128.ngrok-free.app',
     '002516e84453.ngrok-free.app',
+    'phillips-website.onrender.com',
     ]
 NGROK_HOST = os.environ.get('NGROK_HOST')
 if NGROK_HOST:
