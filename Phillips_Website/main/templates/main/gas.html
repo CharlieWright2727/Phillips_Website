@@ -1,0 +1,74 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Gas Services{% endblock %}
+
+{% block content %}
+<section class="hero-slideshow">
+  <div class="slideshow">
+    <div class="slide" style="background-image: url('{% static "images/hero1.png" %}');"></div>
+    <div class="slide" style="background-image: url('{% static "images/hero2.png" %}');"></div>
+    <div class="slide" style="background-image: url('{% static "images/hero3.png" %}');"></div>
+  </div>
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Professional Gas Services You Can Trust</h1>
+      <p style="font-size: 1.1em; max-width: 800px; margin: 0 auto;">
+        At Phillips Maintenance & Plumbing, all our engineers are fully trained and Gas Safe registered, giving you peace of mind that your home is in expert hands. We handle a wide range of gas-related work — from appliance installations to leak repairs — and provide landlord gas safety certificates to ensure full compliance with legal requirements.
+      </p>
+      <a href="tel:07946092096" class="cta-button" style="margin-top: 1em;">Call Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="section-container">
+    <h1>Our Gas Services</h1>
+    <ul class="styled-list">
+      <li>Gas Leak Repairs</li>
+      <li>Landlord Gas Safety Inspections & Certificates</li>
+      <li>Gas Cooker Installations</li>
+      <li>Gas Hob Installations</li>
+      <li>Gas Fire Installations</li>
+    </ul>
+
+    <div class="divider-line"></div>
+
+    <h2>Why Gas Safety Matters</h2>
+    <p>
+      Working with gas is not something to take lightly. It’s vital that any work is carried out by a Gas Safe registered engineer. Always ask to see their Gas Safe ID card — and if you're unsure, you can verify their registration by calling the Gas Safe Register on 0800 408 5500.
+    </p>
+
+    <h2>Book a Free Survey & Quote</h2>
+    <p>
+      If you need help with any gas-related issue — whether it’s installing a new appliance, inspecting a rental property, or repairing a leak — get in touch today for a free, no-obligation survey and quotation.
+    </p>
+
+    <h2>Gas Emergency? We’re Here to Help</h2>
+    <p>
+      In the event of a gas emergency, we respond quickly and aim to resolve most issues in a single visit. Our experienced Gas Safe engineers will carry out all work to the highest safety and quality standards — so you can feel confident the problem won’t return.
+    </p>
+
+    <div class="divider-line"></div>
+
+    <h2>Landlord Safety Inspections</h2>
+    <p>
+      We provide thorough Gas Safety Checks and certification (CP12) for landlords, ensuring all gas appliances and pipework in rental properties are safe, compliant, and legally covered.
+    </p>
+
+    <h2>Gas Cooker/Hob Installations</h2>
+    <p>
+      Safe and secure installation of gas cookers and hobs by fully qualified engineers. We ensure everything is correctly connected and tested, leaving you with peace of mind and a fully functioning kitchen.
+    </p>
+
+    <h2>Gas Fire Installations</h2>
+    <p>
+      Add warmth and character to your home with a professionally installed gas fire. We handle all aspects of the installation, from flue inspection to connection and testing.
+    </p>
+
+    <h2>Gas Leaks</h2>
+    <p>
+      Suspect a gas leak? Call us immediately. We respond rapidly to locate and repair gas leaks, ensuring the safety of your property and everyone in it. Your safety is our top priority.
+    </p>
+  </div>
+</section>
+{% endblock %}

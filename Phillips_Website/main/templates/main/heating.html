@@ -1,0 +1,89 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Heating Services{% endblock %}
+{% block content %}
+
+<!-- HERO SLIDESHOW WITH OVERLAY -->
+<section class="hero-slideshow">
+  <div class="slideshow">
+    <div class="slide" style="background-image: url('{% static 'images/hero1.png' %}');"></div>
+    <div class="slide" style="background-image: url('{% static 'images/hero2.png' %}');"></div>
+    <div class="slide" style="background-image: url('{% static 'images/hero3.png' %}');"></div>
+  </div>
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Heating Services You Can Rely On</h1>
+      <p style="font-size: 1.1em; max-width: 800px; margin: 0 auto;">
+        At Phillips Maintenance & Plumbing, we pride ourselves on delivering high-quality, prompt service. Our fully qualified and experienced Gas Safe registered heating engineers provide complete heating system installations for domestic properties, ensuring efficiency, reliability, and peace of mind.
+      </p>
+      <a href="tel:07946092096" class="cta-button" style="margin-top: 1em;">Call Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="content-section">
+  <div class="section-container">
+    <h2>Our Heating Services Include:</h2>
+    <ul class="styled-list">
+      <li>Boiler Installation</li>
+      <li>Boiler Servicing</li>
+      <li>Boiler Repairs</li>
+      <li>Full Central Heating System Installation</li>
+      <li>Underfloor Heating Installation</li>
+      <li>Emergency Call-Outs</li>
+    </ul>
+
+    <div class="divider-line"></div>
+
+    <h2>Why Choose Phillips Maintenance & Plumbing?</h2>
+    <p>
+      Our team of expert engineers has worked on heating systems of all sizes and types, giving us the knowledge to diagnose and fix issues quickly and efficiently.
+      We’re not just here to do the job — we’re here to advise, support, and ensure your heating system runs smoothly year-round.
+    </p>
+    <ul class="styled-list">
+      <li>All engineers Gas Safe registered</li>
+      <li>Years of hands-on experience</li>
+      <li>Honest, helpful advice</li>
+      <li>Competitive pricing</li>
+      <li>No job too big or small</li>
+    </ul>
+
+    <p><strong>📞 Need Heating Help? Call 07946 092 096</strong></p>
+
+    <div class="divider-line"></div>
+
+    <!-- SERVICE SUBSECTIONS -->
+    <h2>Boiler Installations</h2>
+    <p>
+      We install energy-efficient boilers from all leading brands, tailored to the size and needs of your property. Our expert heating engineers ensure a safe, clean, and seamless installation from start to finish.
+    </p>
+
+    <h2>Boiler Servicing</h2>
+    <p>
+      Keep your boiler running efficiently and safely with our professional servicing. Regular maintenance extends the life of your boiler, reduces the risk of breakdowns, and ensures peak performance year-round.
+    </p>
+
+    <h2>Boiler Repairs</h2>
+    <p>
+      Experiencing boiler issues? We provide fast, reliable repair services to restore your heating and hot water. Our engineers diagnose and fix faults on all makes and models with minimal fuss.
+    </p>
+
+    <h2>Central Heating</h2>
+    <p>
+      From full system installations to radiator replacements and upgrades, we offer comprehensive central heating services to keep your home warm and comfortable. Efficient, cost-effective solutions designed to meet your needs.
+    </p>
+
+    <h2>Underfloor Heating</h2>
+    <p>
+      Enjoy the luxury of warm floors with our underfloor heating installation service. Ideal for new builds or refurbishments, we design and install systems that offer efficient and evenly distributed heat.
+    </p>
+
+    <h2>Heating Emergency Callouts</h2>
+    <p>
+      When the heat goes out, we’re here to help. Our emergency heating service ensures fast attendance and expert repairs to get your system back up and running, especially during those cold winter nights.
+    </p>
+  </div>
+</section>
+
+{% endblock %}

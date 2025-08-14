@@ -1,0 +1,74 @@
+footer {
+    background: #003a70;
+    color: #cccccc;
+    padding: 2em 1em;
+    margin-top: 4em;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin: 1em;
+  }
+  
+  .footer-col h3 {
+    color: white;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 0.5em;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 0.5em;
+  }
+  
+  .footer-logo {
+    height: 100px;
+    width: auto;
+    border: 2px solid #003a70;
+    background: white;
+    border-radius: 1px;
+    padding: 0px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+  }
+
+  .gas-safe-logo {
+    height: 40px;
+    margin-top: 0.5em;
+    background: white;
+    padding: 0.2em;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.15);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.85em;
+    margin-top: 2em;
+    border-top: 1px solid #cccccc;
+    padding-top: 1em;
+    color: #999;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: underline; /* Always underline */
+    font-weight: 500;
+  }
+  
+  .footer a:hover {
+    color: #00bcd4;
+    text-decoration: underline; /* Keep underline on hover */
+  }
+  
+  

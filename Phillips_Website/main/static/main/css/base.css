@@ -1,0 +1,194 @@
+@import url('components/navbar.css');
+@import url('components/hero.css');
+@import url('components/footer.css');
+
+/* General resets and shared elements */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cta-button {
+  background-color: #76c045;
+  color: white;
+  padding: 0.75em 2em;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #5ca534;
+  transform: scale(1.03);
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 3em;
+}
+
+#contact-form-container {
+  margin-top: 1em;
+}
+
+#contact-form-container input,
+#contact-form-container select {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 0.5em auto;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+.info-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.info-section.light {
+  background-color: #f7f7f7;
+}
+
+.info-section.dark {
+  background-color: #e0ecf7;
+}
+
+.info-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0b355d;
+}
+
+.info-section .lead {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.tick-list {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.05em;
+  line-height: 1.6em;
+}
+
+.tick-list li::before {
+  content: '✔️ ';
+  margin-right: 8px;
+}
+
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.light-bg {
+  background-color: #f9f9f9;
+}
+
+.dark-bg {
+  background-color: #e6f0f7;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2em;
+  color: #0b355d;
+}
+
+hr.accent {
+  width: 60px;
+  height: 3px;
+  border: none;
+  background-color: #3f87a6;
+  margin: 16px auto 30px;
+}
+
+.lead {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.tick-list, .service-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.tick-list li::before, .service-list li::before {
+  content: "✔️ ";
+  margin-right: 8px;
+}
+
+.callout {
+  font-size: 1.4em;
+  color: #1a1a1a;
+}
+
+.highlight {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+.section-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.styled-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.divider-line {
+  border-bottom: 2px solid #ccc;
+  margin: 2rem 0;
+}
+
+.faq-item {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-item h3 {
+  color: #003a70;
+  margin-bottom: 0.5em;
+}
+
+
+.faq-bumper {
+  margin-top: 100px; /* Adjust this value as needed to push below navbar */
+}
+

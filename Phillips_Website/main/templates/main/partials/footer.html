@@ -1,0 +1,37 @@
+{% load static %}
+<footer class="footer">  <!-- Added class="footer" -->
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="{% url 'plumbing' %}">Plumbing</a></li>
+        <li><a href="{% url 'heating' %}">Heating</a></li>
+        <li><a href="{% url 'gas' %}">Gas</a></li>
+        <li><a href="#">Bathrooms</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        Phillips Maintenance & Plumbing Ltd is a locally run company offering reliable plumbing and heating services.
+        We handle a wide range of residential work with a focus on quality and customer satisfaction.
+      </p>
+      <p style="margin-top: 1em;"><strong>Gas Safe Registration Number:</strong> 968419</p>
+      <img src="{% static 'images/gas_safe.png' %}" alt="Gas Safe Logo" class="gas-safe-logo">
+    </div>
+
+    <div class="footer-col">
+      <img src="{% static 'images/logo_full.png' %}" alt="Logo" class="footer-logo">
+      <p>Call: <strong style="color:#00bcd4;">07946 092096</strong></p>
+      <p><a href="mailto:info@pmpservices.co.uk">info@pmpservices.co.uk</a></p>
+      <p><a href="https://pmpservices.co.uk" target="_blank">pmpservices.co.uk</a></p>
+      <p><a href="https://www.instagram.com/pmp.servicesltd" target="_blank">📸 pmp.servicesltd</a></p>
+      <p><a href="https://www.facebook.com" target="_blank">👍 Phillips Maintenance & Plumbing</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; Phillips Maintenance & Plumbing Ltd.</p>
+  </div>
+</footer>

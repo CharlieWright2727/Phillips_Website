@@ -1,0 +1,95 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<section class="hero-slideshow">
+  <div class="slideshow">
+    <div class="slide" style="background-image: url('{% static 'images/hero1.png' %}');"></div>
+    <div class="slide" style="background-image: url('{% static 'images/hero2.png' %}');"></div>
+    <div class="slide" style="background-image: url('{% static 'images/hero3.png' %}');"></div>
+  </div>
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Phillips Maintenance & Plumbing</h1>
+
+      <!-- Trigger button -->
+      <button id="contact-toggle" class="cta-button">Contact Us</button>
+
+      <!-- Hidden contact form -->
+      <div id="contact-form" style="display: none; margin-top: 1em;">
+        <form method="POST" action="{% url 'send_contact' %}">
+          {% csrf_token %}
+          <input type="text" name="name" placeholder="Your Name" required><br>
+          <input type="email" name="email" placeholder="Your Email" required><br>
+          <input type="text" name="phone" placeholder="Your Phone" required><br>
+          <input type="text" name="address" placeholder="Your Address"><br>
+          <select name="service" required>
+            <option value="">Select a Service</option>
+            <option value="Plumbing">Plumbing</option>
+            <option value="Heating">Heating</option>
+            <option value="Gas">Gas</option>
+            <option value="Bathroom Installation">Bathroom Installation</option>
+          </select><br><br>
+
+          <textarea name="message" rows="6" placeholder="Add your message here..." required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea><br><br>
+          
+          <button type="submit" class="cta-button">Send</button>
+        </form>
+
+        <p>or <a href="tel:07946092096"><strong>call us</strong></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('contact-toggle').addEventListener('click', function () {
+    const form = document.getElementById('contact-form');
+    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+  });
+</script>
+
+<!-- Welcome Section -->
+<section class="section welcome light-bg">
+  <div class="container">
+    <h2>Welcome to Phillips Maintenance & Plumbing</h2>
+    <hr class="accent">
+    <p class="lead">
+      Expert Plumbing & Heating Services You Can Trust. With over 22 years of experience, we’re fully qualified and Gas Safe registered.
+    </p>
+    <p>
+      Whether it’s fixing a leaky tap or installing a new heating system, every job is treated with the same care and quality.
+    </p>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="section dark-bg">
+  <div class="container">
+    <h2>Why Choose Us?</h2>
+    <hr class="accent">
+    <ul class="tick-list">
+      <li> Over 22 years of industry experience</li>
+      <li> Fully qualified & Gas Safe registered</li>
+      <li> Reliable, high-quality service</li>
+      <li> All work fully guaranteed</li>
+      <li> Honest pricing & transparent advice</li>
+      <li>Local, family-run business</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Get in Touch Section -->
+<section class="section light-bg">
+  <div class="container">
+    <h2>Get in Touch Today</h2>
+    <hr class="accent">
+    <p class="callout">📞 <strong>07946 092 096</strong></p>
+    <p>Contact us for expert advice, a free quote, or to book a service.</p>
+  </div>
+</section>
+
+
+
+{% endblock %}

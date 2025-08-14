@@ -1,0 +1,21 @@
+{% load static %}
+<nav class="navbar">
+    <div class="navbar-container">
+      <div class="nav-logo">
+        <img src="{% static 'images/logo_mini.png' %}" alt="Logo">
+      </div>
+
+          <!-- Hamburger Menu Button -->
+   
+
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="{% url 'plumbing' %}">Plumbing</a></li>
+        <li><a href="{% url 'heating' %}">Heating</a></li>
+        <li><a href="{% url 'gas' %}">Gas</a></li>
+        <li><a href="#">Bathrooms</a></li>
+        <li><a href="{% url 'faqs' %}">FAQs</a></li>
+        
+      </ul>
+    </div>
+  </nav>

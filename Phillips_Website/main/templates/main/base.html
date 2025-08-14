@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Phillips Maintenance & Plumbing{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+
+
+  <!-- This is the key part -->
+  <link rel="stylesheet" href="{% static 'main/css/base.css' %}">
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggle = document.getElementById("contact-toggle");
+    const form = document.getElementById("contact-form-container");
+
+    if (toggle && form) {
+      toggle.addEventListener("click", () => {
+        form.classList.toggle("hidden");
+      });
+    }
+  });
+</script>
+
+<body>
+  {% include 'main/partials/navbar.html' %}
+  {% block content %}{% endblock %}
+  {% include 'main/partials/footer.html' %}
+
+  
+
+</body>
+</html>
