@@ -37,7 +37,8 @@ NGROK_HOST = os.environ.get('NGROK_HOST')
 if NGROK_HOST:
     ALLOWED_HOSTS.append(NGROK_HOST)
 
-# Application definition
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -127,6 +129,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'main', 'static'),]
+
+# Where collectstatic will put all files in production
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# WhiteNoise will serve static files directly in production
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
